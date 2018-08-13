@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="csrf-token" content="{{csrfToken}}">
+  <!-- Page title -->
+  <title>{{title}}</title>
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" />
+
+  <!-- App styles -->
+
+  {{{_sections.head}}}
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+    <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  {{> navigation}} {{{body}}} {{> footer}} {{> scripts}} {{{_sections.script}}}
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+.cache
+.git
+.gitignore
+.vscode
+notes/
+node_modules
